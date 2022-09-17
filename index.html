@@ -43,20 +43,25 @@
         <ul class="page-header__contact-info">
           <li class="page-header__contact-item">
             <a href="mailto:info@devstudio.com" class="page-header__e-mail">
-              <svg class="page-header__icon-mail" width="16" height="12 ">
+              <svg class="page-header__icon-mail">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com
             </a>
           </li>
           <li class="page-header__contact-item">
             <a href="tel:+380961111111" class="page-header__tel"
-              ><svg class="page-header__icon-tel" width="10" height="16">
+              ><svg class="page-header__icon-tel">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
-        <button class="menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="menu-btn-icon" width="40" height="40">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -68,18 +73,22 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-      
+
         <ul class="mobile-nav">
           <li class="mobile-nav-item"><a href="./index.html" class="mobile-nav-link">Студія</a></li>
-          <li class="mobile-nav-item"><a href="./portfolio.html" class="mobile-nav-link">Портфоліо</a></li>
+          <li class="mobile-nav-item">
+            <a href="./portfolio.html" class="mobile-nav-link">Портфоліо</a>
+          </li>
           <li class="mobile-nav-item"><a href="" class="mobile-nav-link">Контакти</a></li>
-         
         </ul>
-        <!-- <div class="mobile-wrap"> -->
+
         <ul class="mobile-contacts">
-          <li class="mobile-contacts-item"><a href="" class="mobile-contacts-tel">+38 096 111 11 11</a></li>
-          <li class="mobile-contacts-item"><a href="" class="mobile-contacts-mail">info@devstudio.com</a></li>
-          
+          <li class="mobile-contacts-item">
+            <a href="" class="mobile-contacts-tel">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts-item">
+            <a href="" class="mobile-contacts-mail">info@devstudio.com</a>
+          </li>
         </ul>
         <ul class="mobile-socials">
           <li class="mobile-socials-item"><a href="" class="mobile-socials-link">Instagram</a></li>
@@ -157,7 +166,21 @@
           <ul class="specialties__list">
             <li class="specialties__item">
               <div class="specialties__wrapper">
-                <img src="images/img.jpg" alt="Людина працює за компʼютером" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/desktop/fea-1.jpeg 1x, ./images/desktop/fea-1@2x.jpeg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/tablet/fea-1.jpeg 1x, ./images/tablet/fea-1@2x.jpeg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/mobile/fea-1.jpeg 1x, ./images/mobile/fea-1@2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/mobile/mem-1.jpeg" alt="Перший учасник" />
+                </picture>
                 <div class="specialties__descr">
                   <p>Десктопні додатки</p>
                 </div>
@@ -165,7 +188,22 @@
             </li>
             <li class="specialties__item">
               <div class="specialties__wrapper">
-                <img src="images/img-2.jpg" alt="Людина працює за ноут-буком" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/desktop/fea-2.jpeg 1x, ./images/desktop/fea-2@2x.jpeg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/tablet/fea-2.jpeg 1x, ./images/tablet/fea-2@2x.jpeg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/mobile/fea-2.jpeg 1x, ./images/mobile/fea-2@2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/mobile/mem-1.jpeg" alt="Перший учасник" />
+                </picture>
+
                 <div class="specialties__descr">
                   <p>Мобільні додатки</p>
                 </div>
@@ -173,7 +211,22 @@
             </li>
             <li class="specialties__item">
               <div class="specialties__wrapper">
-                <img src="images/img-3.jpg" alt="Людина працює із планшетом" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/desktop/fea-3.jpeg 1x, ./images/desktop/fea-3@2x.jpeg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/tablet/fea-3.jpeg 1x, ./images/tablet/fea-3@2x.jpeg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/mobile/fea-3.jpeg 1x, ./images/mobile/fea-3@2x.jpeg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/mobile/mem-1.jpeg" alt="Перший учасник" />
+                </picture>
+
                 <div class="specialties__descr">
                   <p>Дизайнерські рішення</p>
                 </div>
@@ -187,7 +240,21 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__member">
-              <img src="images/member1.jpg" alt="Перший учасник" width="270" />
+              <picture>
+                <source
+                  srcset="./images/desktop/mem-1.jpeg 1x, ./images/desktop/mem-1@2x.jpeg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/mem-1.jpeg 1x, ./images/tablet/mem-1@2x.jpeg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobile/mem-1.jpeg 1x, ./images/mobile/mem-1@2x.jpeg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mobile/mem-1.jpeg" alt="Перший учасник" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__member-name">Ігор Дем'яненко</h3>
                 <p class="team__member-prof">Product Designer</p>
@@ -212,7 +279,21 @@
               </div>
             </li>
             <li class="team__member">
-              <img src="images/member2.jpg" alt="Другий учасник" width="270" />
+              <picture>
+                <source
+                  srcset="./images/desktop/mem-2.jpeg 1x, ./images/desktop/mem-2@2x.jpeg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/mem-2.jpeg 1x, ./images/tablet/mem-2@2x.jpeg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobile/mem-2.jpeg 1x, ./images/mobile/mem-2@2x.jpeg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mobile/mem-1.jpeg" alt="Перший учасник" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__member-name">Ігор Дем'яненко</h3>
                 <p class="team__member-prof">Product Designer</p>
@@ -237,7 +318,21 @@
               </div>
             </li>
             <li class="team__member">
-              <img src="images/member3.jpg" alt="Третій учасник" width="270" />
+              <picture>
+                <source
+                  srcset="./images/desktop/mem-3.jpeg 1x, ./images/desktop/mem-3@2x.jpeg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/mem-3.jpeg 1x, ./images/tablet/mem-3@2x.jpeg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobile/mem-3.jpeg 1x, ./images/mobile/mem-3@2x.jpeg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mobile/mem-1.jpeg" alt="Перший учасник" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__member-name">Микола Тарасов</h3>
                 <p class="team__member-prof">Marketing</p>
@@ -262,7 +357,21 @@
               </div>
             </li>
             <li class="team__member">
-              <img src="images/member4.jpg" alt="Четвертий учасник" width="270" />
+              <picture>
+                <source
+                  srcset="./images/desktop/mem-4.jpeg 1x, ./images/desktop/mem-4@2x.jpeg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/mem-4.jpeg 1x, ./images/tablet/mem-4@2x.jpeg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mobile/mem-4.jpeg 1x, ./images/mobile/mem-4@2x.jpeg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mobile/mem-1.jpeg" alt="Перший учасник" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__member-name">Михайло Єрмаков</h3>
                 <p class="team__member-prof">UI Designer</p>
@@ -468,9 +577,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"></script>
-      <script defer src="./js/mobile-menu.js"></script>
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

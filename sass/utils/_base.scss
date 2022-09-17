@@ -1,10 +1,7 @@
 body {
   font-family: $main-font;
 }
-* {
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
+
 h1,
 h2,
 h3,
@@ -20,10 +17,7 @@ svg {
   display: block;
 }
 img {
-  display: block;
-  // в кого додано max-width коментуємо його, настомість додаємо width: 100%;
-  // max-width: 100%;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -39,8 +33,6 @@ img {
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
   }
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 .visually-hidden {
   position: absolute;

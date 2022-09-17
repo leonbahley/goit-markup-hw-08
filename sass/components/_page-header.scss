@@ -59,6 +59,9 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &--active {
     color: $accent-color;
     position: relative;
@@ -122,7 +125,11 @@
   text-decoration: none;
   line-height: 1.16;
   @media screen and (min-width: 1200px) {
+    font-size: 14px;
     line-height: 1.14;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .page-header__icon-mail,
@@ -131,5 +138,21 @@
   margin-right: 8px;
   @media screen and (min-width: 1200px) {
     margin-right: 10px;
+  }
+}
+.page-header__icon-mail {
+  width: 14px;
+  height: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+.page-header__icon-tel {
+  width: 10px;
+  height: 14px;
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
   }
 }

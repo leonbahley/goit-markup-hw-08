@@ -13,7 +13,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
-    width: 696px;
+    max-width: 696px;
   }
 }
 
@@ -45,8 +45,61 @@
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: $hero-block-bkg;
+  background-repeat: no-repeat;
+  background-position: center;
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 480px;
+    margin: 0 auto;
+    background-size: 478px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/mobile/hero-bkg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/mobile/hero-bkg@2x.jpeg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    margin: 0 auto;
+    max-width: 768px;
+    background-size: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/tablet/hero-bkg.jpeg);
+    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/tablet/hero-bkg@2x.jpeg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin: 0 auto;
+    max-width: 1600px;
+    background-size: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/desktop/hero-bkg.jpeg);
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/desktop/hero-bkg@2x.jpeg);
+    }
+  }
+}
+
