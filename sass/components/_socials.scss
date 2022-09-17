@@ -1,0 +1,28 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.socials__link {
+  color: #afb1b8;
+  @include centered-flex();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+}
+.socials__ico {
+  fill: currentColor;
+}
+.socials__link--inverted {
+  color: $white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
