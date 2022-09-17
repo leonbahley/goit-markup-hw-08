@@ -2,6 +2,11 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+* {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
 h1,
 h2,
 h3,
@@ -24,7 +29,7 @@ img {
 }
 
 .container {
-  width: 480px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -34,12 +39,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -305,7 +310,7 @@ img {
 
 .hero__title {
   color: #ffffff;
-  width: 360px;
+  max-width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -750,6 +755,7 @@ img {
 }
 
 .page-footer__form-label {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -781,7 +787,6 @@ img {
   .subscr-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -797,7 +802,12 @@ img {
 }
 @media screen and (max-width: 1199px) {
   .subscr-form__input {
-    width: 450px;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscr-form__input {
+    min-width: 450px;
   }
 }
 .subscr-form__input:focus {
@@ -812,7 +822,8 @@ img {
   border-radius: 4px;
   border: none;
   display: flex;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -1225,7 +1236,6 @@ img {
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* // justify-content: space-between; */
   padding: 48px 40px;
   background-color: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -1243,7 +1253,6 @@ img {
 }
 
 .mobile-nav {
-  /* // flex-grow: 1; */
   margin-bottom: auto;
 }
 

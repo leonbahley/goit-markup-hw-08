@@ -1,7 +1,10 @@
 body {
   font-family: $main-font;
 }
-
+* {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
 h1,
 h2,
 h3,
@@ -23,23 +26,18 @@ img {
   width: 100%;
   height: auto;
 }
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
-
 
 .container {
-  width: 480px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width:768px) {
-    width: 768px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
   }
-  @media screen and (min-width:1200px) {
-    width: 1200px;
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
   }
   outline: 2px solid red;
   outline-offset: -2px;

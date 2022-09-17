@@ -8,9 +8,9 @@
 
   letter-spacing: 0.03em;
   text-decoration: none;
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
-      line-height: 1.19;
+    line-height: 1.19;
   }
 }
 .logo__logo-black-part {
@@ -18,5 +18,4 @@
 }
 .logo__logo-white-part {
   color: $white-color;
-  
 }

@@ -1,5 +1,4 @@
 .specialties {
-  // padding-top: 0;
   display: none;
 }
 .specialties__title {
@@ -36,7 +35,7 @@
   width: 100%;
 }
 .specialties {
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: block;
   }
   padding-top: 94px;
